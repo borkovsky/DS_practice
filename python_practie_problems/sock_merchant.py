@@ -1,4 +1,4 @@
-# # # Sock Mercant
+# Sock Merchant
 # from https://www.hackerrank.com/challenges/sock-merchant/problem
 
 socks = [1,1,1,2,2,2,2,3,3,3,3,3,3,3,4]

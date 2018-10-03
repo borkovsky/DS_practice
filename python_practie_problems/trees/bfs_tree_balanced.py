@@ -1,5 +1,11 @@
 # BFS
-  #breadth first search
+# breadth first search
+
+# Breadth-first search (BFS) is a method for exploring a tree or graph. 
+# In a BFS, you first explore all the nodes one step away, 
+# then all the nodes two steps away, etc.
+
+
 tree = (5, (6, (7,None, None,),(1,None,None,),),(2,(4,None,None,),(2,None,None,),),)
 
 # node -> (value, left child, right child)

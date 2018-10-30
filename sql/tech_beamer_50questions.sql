@@ -32,3 +32,11 @@ SELECT first_name, department
  	SELECT first_name, department
  	FROM Worker W1
  WHERE W1.department = 'HR';
+
+ -- Q-40. Write An SQL Query To Fetch The Departments That Have Less Than Five People In It.
+ SELECT department
+	FROm worker
+ GROUP BY department
+ HAVING COUNT(worker_id) < 5;
+
+ 

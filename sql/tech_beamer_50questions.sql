@@ -23,3 +23,12 @@ WHERE salary BETWEEN 50000 AND 100000;
 -- Q-36 Show second highest salary
 Select max(Salary) from Worker 
 where Salary not in (Select max(Salary) from Worker);
+
+-- Q-37. Write An SQL Query To Show One Row Twice In Results From A Table.
+SELECT first_name, department 
+	FROM Worker W
+ WHERE W.department = 'HR'
+ UNION ALL
+ 	SELECT first_name, department
+ 	FROM Worker W1
+ WHERE W1.department = 'HR';

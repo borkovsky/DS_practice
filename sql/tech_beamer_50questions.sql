@@ -12,3 +12,14 @@ Select INSTR(FIRST_NAME, BINARY'a') from Worker where FIRST_NAME = 'Amitabh';
 
 -- Q-9. Write An SQL Query To Print The FIRST_NAME From Worker Table After Replacing ‘a’ With ‘A’.
 Select REPLACE(FIRST_NAME,'a','A') from Worker;
+
+
+-- Q-22
+
+SELECT (first_name || ' ' || last_name) as full_NAME, salary
+	FROM worker
+WHERE salary BETWEEN 50000 AND 100000;
+
+-- Q-36 Show second highest salary
+Select max(Salary) from Worker 
+where Salary not in (Select max(Salary) from Worker);

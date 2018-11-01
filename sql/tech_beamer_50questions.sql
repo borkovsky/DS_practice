@@ -40,4 +40,7 @@ SELECT first_name, department
  HAVING COUNT(worker_id) < 5;
 
  -- Q-45. Write An SQL Query To Print The Name Of Employees Having The Highest Salary In Each Department.
+SELECT name
+	FROM Employees
+ ORDER BY salary, DESC;
  
